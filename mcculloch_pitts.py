@@ -30,7 +30,6 @@ def treinar(epocas=20):
             erro = y_real - y_pred
             erro_total += abs(erro)
 
-            # Atualização dos pesos
             for j in range(4):
                 pesos[j] += taxa_aprendizado * erro * x[j]
         
